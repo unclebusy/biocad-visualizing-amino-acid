@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           gap: { xs: 2, sm: 0 },
           alignItems: 'center'
         }}>
-          {/* Логотип */}
+
           <Box sx={{ 
             flex: 1,
             display: 'flex',
@@ -53,8 +53,6 @@ const Footer: React.FC = () => {
               />
             </a>
           </Box>
-
-          {/* Соц. сети */}
           <Box sx={{ 
             display: 'flex', 
             gap: 2,
@@ -128,7 +126,6 @@ const Footer: React.FC = () => {
             </IconButton>
           </Box>
 
-          {/* Копирайт */}
           <Box sx={{ 
             flex: 1,
             display: 'flex',

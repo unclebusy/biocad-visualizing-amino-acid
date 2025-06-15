@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Container, Typography, Paper, TextField } from '@mui/material';
+import { Box, Container, Typography, Paper } from '@mui/material';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SequenceInputForm from './components/SequenceInputForm';
 
 const App: React.FC = () => {
   return (
@@ -39,48 +40,20 @@ const App: React.FC = () => {
               </Typography>
             </Box>
           </Paper>
-          <Paper 
+          <Paper
             elevation={2} 
-            sx={{ 
+            sx={{
+              minHeight: '60vh',
               maxWidth: 600, 
               mx: 'auto', 
               p: { xs: 2, sm: 3, md: 4 },
               width: '100%',
-              minHeight: '60vh',
               borderRadius: '16px',
               backgroundColor: '#F1F3F4',
-              flex: 1,
               mb: 2
             }}
           >
-            <Box component="section" sx={{ 
-              display: 'flex', 
-              flexDirection: 'column', 
-              gap: 2, 
-              alignItems: 'center',
-              height: '100%'
-            }}>
-              <TextField
-                variant="outlined"
-                placeholder="Введите текст..."
-                sx={{ 
-                  width: { xs: '100%', sm: '300px' },
-                  '& .MuiOutlinedInput-root': {
-                    backgroundColor: '#FFFFFF'
-                  }
-                }}
-              />
-              <TextField
-                variant="outlined"
-                placeholder="Введите текст..."
-                sx={{ 
-                  width: { xs: '100%', sm: '300px' },
-                  '& .MuiOutlinedInput-root': {
-                    backgroundColor: '#FFFFFF'
-                  }
-                }}
-              />
-            </Box>
+            <SequenceInputForm />
           </Paper>
         </Container>
       </Box>

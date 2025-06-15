@@ -1,1 +1,1 @@
-# BIOCAD-visualizing-amino-acid
+# BIOCAD Visualization of amino acid sequence alignment
